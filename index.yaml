@@ -3,6 +3,16 @@ entries:
   hello:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-06-24T10:40:30.611335209Z"
+    description: A Helm chart for Kubernetes
+    digest: c56a9e375f6b12f3bf0a3794b63e6897cb74b134e9f3cd93025992e709382e8d
+    name: hello
+    type: application
+    urls:
+    - https://github.com/dimapin/helm-talk/releases/download/hello-1.0.8/hello-1.0.8.tgz
+    version: 1.0.8
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-06-24T10:40:08.035912173Z"
     description: A Helm chart for Kubernetes
     digest: c33e89903c909c0d904927f911b5c798f8f4b9a18de14d44fd38cafee3951682
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/dimapin/helm-talk/releases/download/hello-1.0.7/hello-1.0.7.tgz
     version: 1.0.7
-generated: "2022-06-24T10:40:08.035917273Z"
+generated: "2022-06-24T10:40:30.611344209Z"
