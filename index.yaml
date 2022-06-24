@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  hello:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-06-24T10:40:08.035912173Z"
+    description: A Helm chart for Kubernetes
+    digest: c33e89903c909c0d904927f911b5c798f8f4b9a18de14d44fd38cafee3951682
+    name: hello
+    type: application
+    urls:
+    - https://github.com/dimapin/helm-talk/releases/download/hello-1.0.7/hello-1.0.7.tgz
+    version: 1.0.7
+generated: "2022-06-24T10:40:08.035917273Z"
