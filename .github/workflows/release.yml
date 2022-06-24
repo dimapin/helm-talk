@@ -2,10 +2,8 @@ name: Release Charts
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - 'charts/hello'
+    tags:
+      - 'hello-[0-9]+.[0-9]+.[0-9]+'
   workflow_dispatch:
 
 jobs:
@@ -30,7 +28,7 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v1
         with:
-          version: 3.4.0 #renovate: datasource=github-releases depName=helm/helm
+          version: 3.4.2 #renovate: datasource=github-releases depName=helm/helm
 
       #- name: Add external Helm repos
       #  run: helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -42,7 +40,7 @@ jobs:
         uses: helm/chart-releaser-action@v1.2.1
         with:
           version: v1.2.1
-          charts_dir: deploy
+          charts_dir: charts
           # config:
           # charts_repo_url: https://<owner>.github.io/<project>
         env:
